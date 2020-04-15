@@ -1,0 +1,68 @@
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #e91e63 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$body-bg: $gray-100 !default;
+
+$link-color: $gray-900 !default;
+$text-muted: $gray-500 !default;
+
+$sm-blur: 20px;
+
+$transition-spring: .3s all cubic-bezier(0.68, 0.11, 0.24, 1.62) !default;
+$transition-opacity: opacity .2s ease-in-out !default;
+
+
+$grid-gutter-width: 32px !default;
+$card-spacer-x: $grid-gutter-width !default;
+
+$link-hover-decoration: none !default;
+
+//$font-weight-lighter:         lighter !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 500 !default;
+$font-weight-bold: 700 !default;
+//$font-weight-bolder:          700 !default;
+
+$font-weight-base: $font-weight-light !default;
+
+$border-radius: 1rem !default;
+$border-radius-lg: .3rem !default;
+$border-radius-sm: .2rem !default;
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+                (
+                        0: 0,
+                        1: ($spacer * .25),
+                        2: ($spacer * .5),
+                        3: $spacer,
+                        4: ($spacer * 2),
+                        5: ($spacer * 3)
+                ),
+                $spacers
+);
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Ubuntu:wght@300;500;700&display=swap');
+@import "~bootstrap/scss/bootstrap";
+@import "main";

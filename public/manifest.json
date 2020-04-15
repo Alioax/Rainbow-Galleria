@@ -1,0 +1,25 @@
+{
+  "short_name": "Rainbow",
+  "name": "Rainbow Galleria",
+  "icons": [
+    {
+      "src": "/64.png",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#f0c019",
+  "background_color": "#f0c019"
+}
