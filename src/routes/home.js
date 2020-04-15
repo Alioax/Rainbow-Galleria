@@ -45,11 +45,7 @@ const Home = () => {
   const activePic = query.get("pic");
   return (
     <Layout>
-      <Header
-        breakpoint={breakpoint}
-        data={data}
-        transition={transitionSpring}
-      />
+      <Header breakpoint={breakpoint} data={data} transition={transition} />
       <motion.div
         initial={"fade"}
         animate={"visible"}
