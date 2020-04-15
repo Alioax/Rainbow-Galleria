@@ -21,6 +21,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1ZgNTnN0vcAhA8z35QdD0UjVTfc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -146,7 +147,7 @@
       <workItem from="1586873205055" duration="6891000" />
       <workItem from="1586897542709" duration="66000" />
       <workItem from="1586897621218" duration="3443000" />
-      <workItem from="1586941268798" duration="6295000" />
+      <workItem from="1586941268798" duration="6306000" />
     </task>
     <servers />
   </component>
