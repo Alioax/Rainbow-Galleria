@@ -11,3 +11,10 @@ export const setNotification = (frequency) => {
     payload: frequency,
   };
 };
+
+export const handleSaved = (picture) => {
+  return {
+    type: "HANDLE_SAVED",
+    payload: picture.picture === undefined? picture : picture.picture,
+  };
+};

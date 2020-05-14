@@ -138,6 +138,15 @@ ul {
   background-color: rgba(0, 188, 212, 0.2);
 }
 
+.focus-none:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.transition-base {
+  transition: $transition-base;
+}
+
 .hover-opacity-1 {
   transition: $transition-base;
   opacity: 0;
@@ -180,13 +189,8 @@ ul {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.hover-icon {
-  transition: 0.3s ease-out;
-  color: white;
-}
-
 .hover-icon:hover {
-  background-color: $gray-900;
+  background-color: $gray-100;
 }
 
 /*.arrow-left {
@@ -321,6 +325,10 @@ ul {
 
 .z-1 {
   z-index: 1;
+}
+
+.z-2 {
+  z-index: 2;
 }
 
 .overflow-modal {

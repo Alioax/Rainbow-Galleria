@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import {motion} from "framer-motion"
 import {useSelector, useDispatch} from "react-redux";
 import {setNotification} from "../states/actions/actions";
-import Breakpoint from 'react-socks';
+
 
 function Notification(props) {
     const dispatch = useDispatch();
