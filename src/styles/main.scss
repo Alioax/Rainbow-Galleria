@@ -350,3 +350,29 @@ ul {
     height: 100%;
   }
 }
+
+.bg-rainbow-animation {
+  background: linear-gradient(
+    -45deg,
+#ee77524d, #e73c7e4d, #23a6d54d, #23d5ab4d
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+    // #fa00004d,
+    // #ff00624d,
+    // #00e1ff4d,
+    // #00ffc34d,
+    // #00ff6a4d
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

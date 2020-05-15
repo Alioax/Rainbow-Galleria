@@ -112,7 +112,7 @@ const Fullscreen = (props) => {
       <div
         className={
           (props.isXLarge ? "align-items-center" : "align-items-start") +
-          " vh-100 vw-100 p-theme d-flex overflow-modal justify-content-center top-0 z-2 left-0 blur-trans-md position-fixed"
+          " vh-100 vw-100 p-theme d-flex overflow-modal justify-content-center top-0 z-2 left-0 blur-trans-md bg-rainbow-animation position-fixed"
         }
       >
         <div
