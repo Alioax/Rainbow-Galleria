@@ -48,13 +48,13 @@ const Home = () => {
       <Header
         breakpoint={breakpoint}
         data={data}
-        transition={transition}
+        transition={transitionSpring}
       />
       <motion.div
         initial={"fade"}
         animate={"visible"}
         variants={fadeIn}
-        transition={transition}
+        transition={transitionSpring}
       >
         <Breakpoint large down>
           <Gallery

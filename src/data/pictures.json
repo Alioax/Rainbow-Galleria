@@ -5,7 +5,8 @@
     "title": "Fire it",
     "description": "",
     "coordinates": "https://goo.gl/maps/K2N3kevLvpCh99ZeA",
-    "location": "London"
+    "location": "London",
+        "types": ["Snow", "Forza", "Gaming"]
   },
   {
     "url": "https://lh3.googleusercontent.com/qkPe3PMpMu82NMBsMv_1VuTkHtQGWNfYwrynvgaQfooA8AU2kOOnlgd8qA-4DzTN7DkwfrDQcpocYiVrNY76u2-n5VN9wkYfmfMO3hUzTO9fYGwPMglM-D6osYZd5V4l8NLPIvKJd1crwj3Y7s0Ie73yjFwUdULdEd480fTbNsLWtQ9LCPHvt3nWYO40Q1a8pjXtQxkpIz3Q8lIRuJqMGcQaxNp99PSJpaEakL04JN_nWguMshy62yyDz4lH6zSHu9NZNQKR84alyB028tGLPA3bnPFZmUf6XYblSzpCpRKeKE9tZK_V8n-rpBR7GIHbgymjVmQU5x2ivnFjbzYZ3o9zxQ0HjFjxtyO2sRjy3pJeV9iEZStHi0Eu9tEDnbSEloU3OYupE-fn_vtLYPCKjBglnrQLIbst3cbACtk2hlnLhbbWDaFIr4rgdi_aFixiiENC3sHwty1tH2qQwkhZcNYNMm83AgFroX_otUShQoeUIfn0DsH7--yKacjoDwMN_4uNQa8-JSf3CdqthUlWrgGi0ZVcjHWdFkt2YxGv9LF6tdbU5ErxuFBE_dWdi6iy1ZS9bkMt7kL_P6086X5zycranDNcmXm_2cAiZ-LMSc4ybPtw9Bf3hrNlQDFO0HCC1dpD40nJVUEGaE7GidVPLqymYRfFKqAZIkGXbmmhkFAp9rasWMRX-Eb1M2h5V98IOASrta0w4hYkBxeaV5GskIYWR84h7zw6JgQOI2NsCktxxzLV=w564-h317-no",
