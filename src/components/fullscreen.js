@@ -4,7 +4,12 @@ import { useDispatch, useSelector } from "react-redux";
 import Notification from "./notification";
 import Breakpoint from "react-socks";
 import { motion } from "framer-motion";
-import { MdFavoriteBorder, MdFavorite } from "react-icons/md";
+import {
+  MdFavoriteBorder,
+  MdFavorite,
+  MdCloudDownload,
+  MdFileDownload,
+} from "react-icons/md";
 import { handleSaved } from "../states/actions/actions";
 
 const Fullscreen = (props) => {
@@ -165,7 +170,7 @@ const Fullscreen = (props) => {
                   <motion.button
                     onClick={() => handleSave(props.pictures[props.activePic])}
                     whileTap={{ scale: 0.9 }}
-                    className="focus-none btn focus-none p-0 rounded-sm"
+                    className="focus-none btn mr-2 focus-none p-0 rounded-sm"
                   >
                     <div className="d-flex p-2 rounded-sm transition-base hover-icon">
                       {saved.some(
@@ -179,12 +184,17 @@ const Fullscreen = (props) => {
                       )}
                     </div>
                   </motion.button>
-                  <div className="d-flex content-box p-2 hover-icon rounded-sm wh-16 mx-2">
-                    {/* <FontAwesomeIcon className="text-white" icon="download"/> */}
-                  </div>
-                  <div className="d-flex content-box p-2 hover-icon rounded-sm wh-16">
-                    {/* <FontAwesomeIcon className="text-white" icon="share-alt"/> */}
-                  </div>
+                  <motion.a
+                    whileTap={{ scale: 0.9 }}
+                    target="_blank"
+                    className="focus-none btn focus-none p-0 rounded-sm"
+                    href={props.pictures[props.activePic].url}
+                    download={props.pictures[props.activePic].title}
+                  >
+                    <div className="d-flex p-2 rounded-sm transition-base hover-icon">
+                      <MdFileDownload className="text-primary h3 mb-0" />
+                    </div>
+                  </motion.a>
                 </div>
               </div>
             </div>

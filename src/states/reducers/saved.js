@@ -1,5 +1,3 @@
-
-
 const savedItems =
   localStorage.getItem("Saved") !== null
     ? JSON.parse(localStorage.getItem("Saved"))
@@ -22,12 +20,9 @@ const saved = (state = savedItems, action) => {
           }
         });
         savedDuplicate.splice(i, 1);
-
       } else {
         //adding a picture
-        savedDuplicate.push(action.payload);
-        console.log(action.payload);
-        
+        savedDuplicate.unshift(action.payload);
       }
 
       //syncing both local storage and redux state with the new array
