@@ -439,13 +439,13 @@ const Gallery = (props) => {
         ? handleModalOpen(true)
         : handleModalOpen(false)}
 
-      <AnimatePresence>
+      {/* <AnimatePresence> */}
         {props.activePic !== null ? (
           <motion.div
             className="z-2"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            // initial={{ opacity: 0 }}
+            // animate={{ opacity: 1 }}
+            // exit={{ opacity: 0 }}
           >
             <Fullscreen
               isXLarge={props.breakpoint === "xlarge"}
@@ -457,7 +457,7 @@ const Gallery = (props) => {
         ) : (
           void 0
         )}
-      </AnimatePresence>
+      {/* </AnimatePresence> */}
     </Container>
   );
 };
