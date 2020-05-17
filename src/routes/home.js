@@ -17,6 +17,12 @@ function useQuery() {
 const Home = () => {
   const breakpoint = useCurrentBreakpointName();
   let query = useQuery();
+  const type = query.get("type");
+  const activePic = query.get("pic");
+
+
+console.log(activePic === null ? 0 : 3);
+
 
   /*        useEffect(() => {
                     /!*axios.get('../data/pictures.json').then(res => {
@@ -27,7 +33,7 @@ const Home = () => {
   const transition = {
     ease: "easeInOut",
     duration: 1,
-    delay: 3,
+    delay: activePic !== null ? 0 : 3,
   };
 
   const transitionSpring = {
@@ -41,15 +47,9 @@ const Home = () => {
     fade: { opacity: 0 },
   };
 
-  const type = query.get("type");
-  const activePic = query.get("pic");
   return (
     <Layout>
-      <Header
-        breakpoint={breakpoint}
-        data={data}
-        transition={transition}
-      />
+      <Header breakpoint={breakpoint} data={data} transition={transition} />
       <motion.div
         initial={"fade"}
         animate={"visible"}

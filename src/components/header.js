@@ -5,8 +5,8 @@ const Header = (props) => {
   let isLarge = false;
 
   const slideDown = {
-    top: { marginTop: 0 },
-    center: { marginTop: "25vh" },
+    top: { paddingTop: 0 },
+    center: { paddingTop: "25vh" },
   };
 
   const fadeIn = {
