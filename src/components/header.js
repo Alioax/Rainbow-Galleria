@@ -39,6 +39,12 @@ const Header = (props) => {
     headerImg = props.data.filter((pic) => pic.headerLg)[0];
   }
 
+  const transition_delay = {
+    ease: "easeInOut",
+    duration: 1,
+    delay: props.activePic !== null ? 0 : 4,
+  };
+
   return (
     <motion.div
       initial={"center"}
@@ -64,13 +70,19 @@ const Header = (props) => {
         initial={"center"}
         animate={"top"}
         variants={blur}
-        transition={props.transition}
+        // transition={props.transition}
+        transition={transition_delay}
         className={
           (isLarge ? void 0 : "blur-sm") +
           " position-absolute w-100 h-100 top-0"
         }
       ></motion.div>
-      <div className="position-absolute d-flex align-items-center justify-content-center w-100 h-100 top-0">
+      <motion.div
+        className="position-absolute d-flex align-items-center justify-content-center w-100 h-100 top-0"
+        initial={{ backgroundColor: "rgba(0,0,0,0)" }}
+        animate={{ backgroundColor: "rgba(0,0,0,0.3)" }}
+        transition={transition_delay}
+      >
         <div>
           <motion.h1
             initial={"center"}
@@ -82,7 +94,7 @@ const Header = (props) => {
             Rainbow Galleria
           </motion.h1>
         </div>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };

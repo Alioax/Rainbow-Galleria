@@ -36,6 +36,12 @@ console.log(activePic === null ? 0 : 3);
     delay: activePic !== null ? 0 : 3,
   };
 
+  const transition_delay = {
+    ease: "easeInOut",
+    duration: 1,
+    delay: activePic !== null ? 0 : 3,
+  };
+
   const transitionSpring = {
     type: "spring",
     damping: 10,
@@ -49,7 +55,12 @@ console.log(activePic === null ? 0 : 3);
 
   return (
     <Layout>
-      <Header breakpoint={breakpoint} data={data} transition={transition} />
+      <Header
+        breakpoint={breakpoint}
+        data={data}
+        activePic={activePic}
+        transition={transition}
+      />
       <motion.div
         initial={"fade"}
         animate={"visible"}
