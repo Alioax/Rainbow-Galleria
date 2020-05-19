@@ -42,7 +42,7 @@ const Header = (props) => {
   const transition_delay = {
     ease: "easeInOut",
     duration: 1,
-    delay: props.activePic !== null ? 0 : 4,
+    delay: props.activePic !== null ? 0 : props.transition.delay + 1.5,
   };
 
   return (

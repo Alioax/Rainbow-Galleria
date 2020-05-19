@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import {
   MdFavoriteBorder,
   MdFavorite,
-  MdCloudDownload,
+  MdPlace,
   MdFileDownload,
 } from "react-icons/md";
 import { handleSaved } from "../states/actions/actions";
@@ -151,8 +151,8 @@ const Fullscreen = (props) => {
             <div className="mb-theme">
               <h1 className="mb-3">{props.pictures[props.activePic].title}</h1>
               {props.pictures[props.activePic].location !== null ? (
-                <div className="text-muted mb-3 font-weight-light">
-                  {/* <FontAwesomeIcon className="mb-0 mr-2" icon="map-marker-alt"/> */}
+                <div className="d-flex align-items-center text-muted mb-3 font-weight-light">
+                  <MdPlace className="h4 mb-0 mr-1"/>
                   <span className="">
                     {props.pictures[props.activePic].location}
                   </span>
