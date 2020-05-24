@@ -171,6 +171,10 @@ ul {
   }
 }
 
+.hover-no-blur:hover{
+  backdrop-filter: saturate(100%) blur(0px) !important;
+}
+
 .hover-only-opacity-1 {
   transition: $transition-opacity;
   opacity: 0;

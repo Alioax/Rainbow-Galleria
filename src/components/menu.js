@@ -14,12 +14,11 @@ const Menu = (props) => {
     stiffness: 100,
   };
 
-
   return (
     <div
       className={
-        (props.isLarge ? "top-0 py-3" : "bot-0 py-3") +
-        " blur-trans-md bg-w-72 z-1 position-sticky"
+        (props.isLarge ? "top-0 hover-no-blur py-3" : "bot-0 py-3") +
+        " blur-trans-md transition-base bg-w-72 z-1 position-sticky"
       }
     >
       <Container fluid>
@@ -52,7 +51,8 @@ const Menu = (props) => {
                     className={
                       (props.type === "Saved"
                         ? "font-weight-bold"
-                        : "text-secondary") + " align-items-center d-inline-flex"
+                        : "text-secondary") +
+                      " align-items-center d-inline-flex"
                     }
                     to="/galleria?type=Saved"
                   >
