@@ -9,6 +9,7 @@ import Menu from "../components/menu";
 import { useLocation } from "react-router-dom";
 import Gallery from "../components/gallery";
 import { useCurrentBreakpointName } from "react-socks";
+import getScrollbarWidth from "../functions/scrollbarWidth";
 
 function useQuery() {
   return new URLSearchParams(useLocation().search);
@@ -20,23 +21,33 @@ const Home = () => {
   const type = query.get("type");
   const activePic = query.get("pic");
 
-
-console.log(activePic === null ? 0 : 3);
-
+  console.log(activePic === null ? 0 : 3);
 
   /*        useEffect(() => {
                     /!*axios.get('../data/pictures.json').then(res => {
                         console.log(res.data)
                     })*!/
-                });*/
+                }); */
+
+  useEffect(() => {
+    if (activePic === null) {
+      document.body.classList.add("modal-open");
+      document.body.style.paddingRight = `${getScrollbarWidth()}px`;
+    } else {
+      document.body.classList.remove("modal-open");
+      document.body.style.paddingRight = "0";
+    }
+
+    setTimeout(() => {
+      if (activePic === null) {
+      document.body.classList.remove("modal-open");
+      document.body.style.paddingRight = "0";
+      }
+    }, 3500);
+
+  }, []);
 
   const transition = {
-    ease: "easeInOut",
-    duration: 1,
-    delay: activePic !== null ? 0 : 3,
-  };
-
-  const transition_delay = {
     ease: "easeInOut",
     duration: 1,
     delay: activePic !== null ? 0 : 3,

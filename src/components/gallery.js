@@ -5,7 +5,7 @@ import { Container } from "reactstrap";
 import { Link, useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import Fullscreen from "./fullscreen";
-import getScrollbarWidth from "./scrollbarWidth";
+import getScrollbarWidth from "../functions/scrollbarWidth";
 import { MdFavoriteBorder } from "react-icons/md";
 import { MdFavorite } from "react-icons/md";
 import { motion, AnimatePresence } from "framer-motion";
