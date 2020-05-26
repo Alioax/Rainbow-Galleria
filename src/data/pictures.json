@@ -6,7 +6,16 @@
     "description": "Colmar is a town in the Grand Est region of northeastern France, near the border with Germany, with the population of 70,284 people in 2015. Its old town has cobblestone streets lined with half-timbered medieval and early Renaissance buildings.",
     "coordinates": null,
     "location": "Colmar, France",
-    "types": ["France", "Colmar", "River", "Cloudy", "Building", "Side Walk", "Sky"]
+    "types": [
+      "France",
+      "Colmar",
+      "Urban",
+      "River",
+      "Cloudy",
+      "Building",
+      "Side Walk",
+      "Sky"
+    ]
   },
   {
     "url": "https://lh3.googleusercontent.com/pw/ACtC-3cAUX9W0j6JifnL054rzj15lqXkZWhY-3hf8_7HBl-kybAIcXApDclIPv4TSN2yXrAjCtQLoe5PiuvxvxxB7Lpgw0LZOgp0T_81GPk6iet-v9-fMbzB6L-VLV9h8mjGUXtWEPXOnWez1u-jcfFtcZkf=w876-h657-no?authuser=0",
@@ -15,7 +24,7 @@
     "description": "Colmar is a town in the Grand Est region of northeastern France, near the border with Germany, with the population of 70,284 people in 2015. Its old town has cobblestone streets lined with half-timbered medieval and early Renaissance buildings.",
     "coordinates": null,
     "location": "Colmar, France",
-    "types": ["France", "Colmar", "Bicycle", "Cloudy", "Building"]
+    "types": ["France", "Colmar", "Urban", "Bicycle", "Cloudy", "Building"]
   },
   {
     "url": "https://lh3.googleusercontent.com/pw/ACtC-3cyOqhAAziyabX7_NQQUklgh_KqCIhU8FryJUhOv5ycgcDwoXlJKjO1uqg8yCSorjPtXoFAgOfw87fqFvTRuQ429rlHJcLownozjdT_AFR5FSR23NmtVmifhXSkHhjsu-XCSqVSugdpFpM31RbBg2R-=w986-h657-no?authuser=0",
@@ -24,7 +33,15 @@
     "description": "Colmar is a town in the Grand Est region of northeastern France, near the border with Germany, with the population of 70,284 people in 2015. Its old town has cobblestone streets lined with half-timbered medieval and early Renaissance buildings.",
     "coordinates": null,
     "location": "Colmar, France",
-    "types": ["France", "Colmar", "Sky", "Night", "Windows", "Building", "Medieval"]
+    "types": [
+      "France",
+      "Colmar",
+      "Sky",
+      "Night",
+      "Windows",
+      "Building",
+      "Medieval"
+    ]
   },
   {
     "url": "https://lh3.googleusercontent.com/pw/ACtC-3fI89OF9vENswnijsNkoOpu-cmsx56LYrDCITZznBnyRg0x7Lt0F3xGhKlhkwGprS8BgAW1AJxtEO6Y438RaAQ-DBFqd8x2SAOzP7gmLlghPRoDh4YXqaApyMvJ5BZUgLuoyJb9YxOLTvQnAuo6o2BO=w986-h657-no?authuser=0",
@@ -42,7 +59,7 @@
     "description": "Colmar is a town in the Grand Est region of northeastern France, near the border with Germany, with the population of 70,284 people in 2015. Its old town has cobblestone streets lined with half-timbered medieval and early Renaissance buildings.",
     "coordinates": null,
     "location": "Colmar, France",
-    "types": ["France", "Colmar", "River", "Sky", "Building"]
+    "types": ["France", "Colmar", "Urban", "River", "Sky", "Building"]
   },
   {
     "url": "https://lh3.googleusercontent.com/pw/ACtC-3edmU5SrHzwguT5adgzCsF2oeY7jA6HKYPdklNa01-vm3CIjw9kVg2q-y2AS2H-ArgO3kIJH2Ub17zTt_xEe2JkcQiK-NJxHD_dZtrueMqeBcxmCTisSvtEA0RIQvF9OZ-hK9-1PKPoxuRDURuqX06h=w986-h657-no?authuser=0",
@@ -51,7 +68,7 @@
     "description": "Colmar is a town in the Grand Est region of northeastern France, near the border with Germany, with the population of 70,284 people in 2015. Its old town has cobblestone streets lined with half-timbered medieval and early Renaissance buildings.",
     "coordinates": null,
     "location": "Colmar, France",
-    "types": ["France", "Colmar", "Yellow", "Building", "Windows"]
+    "types": ["France", "Colmar", "Yellow", "Building", "Urban", "Windows"]
   },
   {
     "url": "https://lh3.googleusercontent.com/pw/ACtC-3e5xKyejHqotozrhd1Jy4fEv-Fs9n3watzrjJubrXEZTCxDKN0qbibFVq3_iwvPSAbvLXAtPGzbnlYL1LIjVJfRAeNDvS7fKkStdRXrb-WoP_1deOS8YjUwdPQ0I9zpjKfUVWD-M6UmbCwr1-G3uKey=w438-h657-no?authuser=0",
@@ -60,7 +77,7 @@
     "description": "Colmar is a town in the Grand Est region of northeastern France, near the border with Germany, with the population of 70,284 people in 2015. Its old town has cobblestone streets lined with half-timbered medieval and early Renaissance buildings.",
     "coordinates": null,
     "location": "Colmar, France",
-    "types": ["France", "Colmar", "Side Walk", "Building", "Windows"]
+    "types": ["France", "Colmar", "Side Walk", "Urban", "Building", "Windows"]
   },
   {
     "url": "https://lh3.googleusercontent.com/pw/ACtC-3eIXVJ6sQNLI3MaayQrRfSs-dEm4zEVKGGo6g_3JUpdazvnMaCVhJvHt8BaVR1rvtoDrV1ToRAEpoue-vpx2veBTBDWC3w1GsgvJaA-RFvJ-5o_YNjzVr-ufimd-F35AJtNHhJ7LBkOeVb0Jts0M8MU=w438-h657-no?authuser=0",
@@ -97,6 +114,6 @@
     "coordinates": null,
     "headerLg": true,
     "location": "Colmar, France",
-    "types": ["France", "Colmar", "Building", "Medieval", "Windows"]
+    "types": ["France", "Colmar", "Building","Urban", "Medieval", "Windows"]
   }
 ]

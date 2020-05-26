@@ -198,7 +198,7 @@ const Fullscreen = (props) => {
                 </div>
               </div>
             </div>
-            <p className="text-muted">
+            <p className="text-muted mb-0">
               {props.pictures[props.activePic].description}
             </p>
           </div>
