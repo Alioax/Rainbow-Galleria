@@ -134,7 +134,7 @@ const Fullscreen = (props) => {
         <meta
           property="og:url"
           content={`https://rainbow-galleria.netlify.app/#/galleria?${
-            props.type === null ? "" : props.type
+            props.type === null ? "" : props.type + "&"
           }pic=${props.activePic}`}
         />
       </Helmet>
