@@ -6,6 +6,7 @@ import axios from "axios";
 import data from "../data/pictures";
 import Header from "../components/header";
 import Menu from "../components/menu";
+import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
 import Gallery from "../components/gallery";
 import { useCurrentBreakpointName } from "react-socks";
@@ -46,6 +47,7 @@ const Home = () => {
     }, 3500);
   }, []);
 
+  
   const transition = {
     ease: "easeInOut",
     duration: 1,
@@ -65,6 +67,11 @@ const Home = () => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>
+          Rainbow Galleria
+        </title>
+      </Helmet>
       <Header
         breakpoint={breakpoint}
         data={data}

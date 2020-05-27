@@ -118,8 +118,11 @@ const Fullscreen = (props) => {
           name="description"
           content={props.pictures[props.activePic].description}
         />
-        <meta property="og:title" content="The Rock" />
-        {/* <meta property="og:type" content="video.movie" /> */}
+        <meta
+          property="og:title"
+          content={props.pictures[props.activePic].title}
+        />
+        <meta property="og:type" content="website" />
         {/* <meta
           property="og:url"
           content="http://www.imdb.com/title/tt0117500/"
