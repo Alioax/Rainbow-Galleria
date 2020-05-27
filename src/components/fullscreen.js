@@ -46,7 +46,11 @@ const Fullscreen = (props) => {
   function handlePicChange(step) {
     if (props.activePic !== props.pictures.length - 1 && step === 1) {
       if (props.type === null) {
-        history.replace(`galleria?${props.type !== null? "&" : ""}pic=${props.activePic + step}`);
+        history.replace(
+          `galleria?${props.type !== null ? "&" : ""}pic=${
+            props.activePic + step
+          }`
+        );
       } else {
         history.replace(
           `galleria?type=${props.type}&pic=${props.activePic + step}`
@@ -123,13 +127,15 @@ const Fullscreen = (props) => {
           content={props.pictures[props.activePic].title}
         />
         <meta property="og:type" content="website" />
-        {/* <meta
-          property="og:url"
-          content={`https://rainbow-galleria.netlify.app/#/galleria?pic=0`}
-        /> */}
         <meta
           property="og:image"
           content={props.pictures[props.activePic].url}
+        />
+        <meta
+          property="og:url"
+          content={`https://rainbow-galleria.netlify.app/#/galleria?${
+            props.type === null ? "" : props.type
+          }pic=${props.activePic}`}
         />
       </Helmet>
       <div
