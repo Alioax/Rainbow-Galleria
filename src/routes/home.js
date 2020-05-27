@@ -40,11 +40,10 @@ const Home = () => {
 
     setTimeout(() => {
       if (activePic === null) {
-      document.body.classList.remove("modal-open");
-      document.body.style.paddingRight = "0";
+        document.body.classList.remove("modal-open");
+        document.body.style.paddingRight = "0";
       }
     }, 3500);
-
   }, []);
 
   const transition = {
