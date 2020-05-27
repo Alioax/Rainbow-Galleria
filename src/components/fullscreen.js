@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Notification from "./notification";
 import Breakpoint from "react-socks";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 import {
   MdFavoriteBorder,
   MdFavorite,
@@ -109,6 +110,25 @@ const Fullscreen = (props) => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          {props.pictures[props.activePic].title} | Rainbow Galleria
+        </title>
+        <meta
+          name="description"
+          content={props.pictures[props.activePic].description}
+        />
+        <meta property="og:title" content="The Rock" />
+        {/* <meta property="og:type" content="video.movie" /> */}
+        {/* <meta
+          property="og:url"
+          content="http://www.imdb.com/title/tt0117500/"
+        /> */}
+        <meta
+          property="og:image"
+          content={props.pictures[props.activePic].url}
+        />
+      </Helmet>
       <div
         className={
           (props.isXLarge ? "align-items-center" : "align-items-start") +
@@ -152,7 +172,7 @@ const Fullscreen = (props) => {
               <h1 className="mb-3">{props.pictures[props.activePic].title}</h1>
               {props.pictures[props.activePic].location !== null ? (
                 <div className="d-flex align-items-center text-muted mb-3 font-weight-light">
-                  <MdPlace className="h4 mb-0 mr-1"/>
+                  <MdPlace className="h4 mb-0 mr-1" />
                   <span className="">
                     {props.pictures[props.activePic].location}
                   </span>
