@@ -38,7 +38,6 @@ const Home = () => {
       document.body.classList.remove("modal-open");
       document.body.style.paddingRight = "0";
     }
-
     setTimeout(() => {
       if (activePic === null) {
         document.body.classList.remove("modal-open");

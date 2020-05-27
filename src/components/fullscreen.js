@@ -46,7 +46,7 @@ const Fullscreen = (props) => {
   function handlePicChange(step) {
     if (props.activePic !== props.pictures.length - 1 && step === 1) {
       if (props.type === null) {
-        history.replace(`galleria?&pic=${props.activePic + step}`);
+        history.replace(`galleria?${props.type !== null? "&" : ""}pic=${props.activePic + step}`);
       } else {
         history.replace(
           `galleria?type=${props.type}&pic=${props.activePic + step}`
@@ -55,7 +55,7 @@ const Fullscreen = (props) => {
     }
     if (props.activePic !== 0 && step === -1) {
       if (props.type === null) {
-        history.replace(`galleria?&pic=${props.activePic + step}`);
+        history.replace(`galleria?pic=${props.activePic + step}`);
       } else {
         history.replace(
           `galleria?type=${props.type}&pic=${props.activePic + step}`
@@ -125,7 +125,7 @@ const Fullscreen = (props) => {
         <meta property="og:type" content="website" />
         {/* <meta
           property="og:url"
-          content="http://www.imdb.com/title/tt0117500/"
+          content={`https://rainbow-galleria.netlify.app/#/galleria?pic=0`}
         /> */}
         <meta
           property="og:image"

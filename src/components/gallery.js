@@ -72,7 +72,7 @@ const Gallery = (props) => {
               <Col className="" xs={12 / columns}>
                 {pictures.map((picture, index) =>
                   index % columns === columns - 1 ? (
-                    <Link key={index} to={`${lastUrl}&pic=${index}`}>
+                    <Link key={index} to={`${lastUrl}${props.type !== null? "&" : ""}pic=${index}`}>
                       <div className="overflow-hidden hover-parent position-relative img-hover img-hover mb-theme rounded shadow-lg">
                         <img
                           className="img-fluid w-100 "
@@ -133,7 +133,7 @@ const Gallery = (props) => {
               <Col className="" xs={12 / columns}>
                 {pictures.map((picture, index) =>
                   index % columns === columns - 2 ? (
-                    <Link key={index} to={`${lastUrl}&pic=${index}`}>
+                    <Link key={index} to={`${lastUrl}${props.type !== null? "&" : ""}pic=${index}`}>
                       <div className="overflow-hidden hover-parent position-relative img-hover img-hover mb-theme rounded shadow-lg">
                         <img
                           className="img-fluid w-100 "
@@ -195,7 +195,7 @@ const Gallery = (props) => {
                 <Col className="" xs={12 / columns}>
                   {pictures.map((picture, index) =>
                     index % columns === columns - 3 ? (
-                      <Link key={index} to={`${lastUrl}&pic=${index}`}>
+                      <Link key={index} to={`${lastUrl}${props.type !== null? "&" : ""}pic=${index}`}>
                         <div className="overflow-hidden hover-parent position-relative img-hover img-hover mb-theme rounded shadow-lg">
                           <img
                             className="img-fluid w-100 "
@@ -262,7 +262,7 @@ const Gallery = (props) => {
                 <Col className="" xs={12 / columns}>
                   {pictures.map((picture, index) =>
                     index % columns === columns - 4 ? (
-                      <Link key={index} to={`${lastUrl}&pic=${index}`}>
+                      <Link key={index} to={`${lastUrl}${props.type !== null? "&" : ""}pic=${index}`}>
                         <div className="overflow-hidden hover-parent position-relative img-hover img-hover mb-theme rounded shadow-lg">
                           <img
                             className="img-fluid w-100 "
@@ -329,7 +329,7 @@ const Gallery = (props) => {
                 <Col className="" xs={12 / columns}>
                   {pictures.map((picture, index) =>
                     index % columns === columns - 5 ? (
-                      <Link key={index} to={`${lastUrl}&pic=${index}`}>
+                      <Link key={index} to={`${lastUrl}${props.type !== null? "&" : ""}pic=${index}`}>
                         <div className="overflow-hidden hover-parent position-relative img-hover img-hover mb-theme rounded shadow-lg">
                           <img
                             className="img-fluid w-100 "
@@ -396,7 +396,7 @@ const Gallery = (props) => {
                 <Col className="" xs={12 / columns}>
                   {pictures.map((picture, index) =>
                     index % columns === columns - 6 ? (
-                      <Link key={index} to={`${lastUrl}&pic=${index}`}>
+                      <Link key={index} to={`${lastUrl}${props.type !== null? "&" : ""}pic=${index}`}>
                         <div className="overflow-hidden hover-parent position-relative img-hover img-hover mb-theme rounded shadow-lg">
                           <img
                             className="img-fluid w-100 "
