@@ -132,6 +132,10 @@ const Fullscreen = (props) => {
           content={props.pictures[props.activePic].url}
         />
         <meta
+          property="og:image:secure_url"
+          content={props.pictures[props.activePic].url}
+        />
+        <meta
           property="og:url"
           content={`https://rainbow-galleria.netlify.app/#/galleria?${
             props.type === null ? "" : "type=" + props.type + "&"
