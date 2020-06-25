@@ -17,7 +17,7 @@ const Menu = (props) => {
   return (
     <div
       className={
-        (props.isLarge ? "top-0 hover-no-blur py-3" : "bot-0 py-3") +
+        (props.isLarge ? "top-0 py-3" : "bot-0 py-3") +
         " blur-trans-md transition-base bg-w-72 z-1 position-sticky"
       }
     >

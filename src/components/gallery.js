@@ -20,7 +20,7 @@ const Gallery = (props) => {
   if (props.type === null) {
     lastUrl = `/galleria?`;
   }
-  let columns = 2;
+  let columns = 1;
   let pictures = props.data;
 
   if (props.type !== null) {
@@ -63,7 +63,9 @@ const Gallery = (props) => {
     <>
       {pictures.length === 0 ? (
         <div className="p-lg-5 m-lg-5 p-5 d-flex justify-content-center align-items-center">
-          <h1 className="text-primary  mb-0 font-weight-light">No Photos here, Send us some</h1>
+          <h1 className="text-primary  mb-0 font-weight-light">
+            No Photos here, Send us some
+          </h1>
         </div>
       ) : (
         <Container fluid>
@@ -72,8 +74,18 @@ const Gallery = (props) => {
               <Col className="" xs={12 / columns}>
                 {pictures.map((picture, index) =>
                   index % columns === columns - 1 ? (
-                    <Link key={index} to={`${lastUrl}${props.type !== null? "&" : ""}pic=${index}`}>
-                      <div className="overflow-hidden hover-parent position-relative img-hover img-hover mb-theme rounded shadow-lg">
+                    <Link
+                      key={index}
+                      to={`${lastUrl}${
+                        props.type !== null ? "&" : ""
+                      }pic=${index}`}
+                    >
+                      <div
+                        className={
+                          (props.breakpoint === "xlarge" ? "img-hover " : "") +
+                          " overflow-hidden hover-parent position-relative mb-theme rounded shadow-lg"
+                        }
+                      >
                         <img
                           className="img-fluid w-100 "
                           src={picture.url}
@@ -133,8 +145,18 @@ const Gallery = (props) => {
               <Col className="" xs={12 / columns}>
                 {pictures.map((picture, index) =>
                   index % columns === columns - 2 ? (
-                    <Link key={index} to={`${lastUrl}${props.type !== null? "&" : ""}pic=${index}`}>
-                      <div className="overflow-hidden hover-parent position-relative img-hover img-hover mb-theme rounded shadow-lg">
+                    <Link
+                      key={index}
+                      to={`${lastUrl}${
+                        props.type !== null ? "&" : ""
+                      }pic=${index}`}
+                    >
+                      <div
+                        className={
+                          (props.breakpoint === "xlarge" ? "img-hover " : "") +
+                          "overflow-hidden hover-parent position-relative mb-theme rounded shadow-lg"
+                        }
+                      >
                         <img
                           className="img-fluid w-100 "
                           src={picture.url}
@@ -195,8 +217,20 @@ const Gallery = (props) => {
                 <Col className="" xs={12 / columns}>
                   {pictures.map((picture, index) =>
                     index % columns === columns - 3 ? (
-                      <Link key={index} to={`${lastUrl}${props.type !== null? "&" : ""}pic=${index}`}>
-                        <div className="overflow-hidden hover-parent position-relative img-hover img-hover mb-theme rounded shadow-lg">
+                      <Link
+                        key={index}
+                        to={`${lastUrl}${
+                          props.type !== null ? "&" : ""
+                        }pic=${index}`}
+                      >
+                        <div
+                          className={
+                            (props.breakpoint === "xlarge"
+                              ? "img-hover "
+                              : "") +
+                            "overflow-hidden hover-parent position-relative mb-theme rounded shadow-lg"
+                          }
+                        >
                           <img
                             className="img-fluid w-100 "
                             src={picture.url}
@@ -262,8 +296,20 @@ const Gallery = (props) => {
                 <Col className="" xs={12 / columns}>
                   {pictures.map((picture, index) =>
                     index % columns === columns - 4 ? (
-                      <Link key={index} to={`${lastUrl}${props.type !== null? "&" : ""}pic=${index}`}>
-                        <div className="overflow-hidden hover-parent position-relative img-hover img-hover mb-theme rounded shadow-lg">
+                      <Link
+                        key={index}
+                        to={`${lastUrl}${
+                          props.type !== null ? "&" : ""
+                        }pic=${index}`}
+                      >
+                        <div
+                          className={
+                            (props.breakpoint === "xlarge"
+                              ? "img-hover "
+                              : "") +
+                            "overflow-hidden hover-parent position-relative mb-theme rounded shadow-lg"
+                          }
+                        >
                           <img
                             className="img-fluid w-100 "
                             src={picture.url}
@@ -329,8 +375,20 @@ const Gallery = (props) => {
                 <Col className="" xs={12 / columns}>
                   {pictures.map((picture, index) =>
                     index % columns === columns - 5 ? (
-                      <Link key={index} to={`${lastUrl}${props.type !== null? "&" : ""}pic=${index}`}>
-                        <div className="overflow-hidden hover-parent position-relative img-hover img-hover mb-theme rounded shadow-lg">
+                      <Link
+                        key={index}
+                        to={`${lastUrl}${
+                          props.type !== null ? "&" : ""
+                        }pic=${index}`}
+                      >
+                        <div
+                          className={
+                            (props.breakpoint === "xlarge"
+                              ? "img-hover "
+                              : "") +
+                            "overflow-hidden hover-parent position-relative mb-theme rounded shadow-lg"
+                          }
+                        >
                           <img
                             className="img-fluid w-100 "
                             src={picture.url}
@@ -396,8 +454,20 @@ const Gallery = (props) => {
                 <Col className="" xs={12 / columns}>
                   {pictures.map((picture, index) =>
                     index % columns === columns - 6 ? (
-                      <Link key={index} to={`${lastUrl}${props.type !== null? "&" : ""}pic=${index}`}>
-                        <div className="overflow-hidden hover-parent position-relative img-hover img-hover mb-theme rounded shadow-lg">
+                      <Link
+                        key={index}
+                        to={`${lastUrl}${
+                          props.type !== null ? "&" : ""
+                        }pic=${index}`}
+                      >
+                        <div
+                          className={
+                            (props.breakpoint === "xlarge"
+                              ? "img-hover "
+                              : "") +
+                            "overflow-hidden hover-parent position-relative mb-theme rounded shadow-lg"
+                          }
+                        >
                           <img
                             className="img-fluid w-100 "
                             src={picture.url}
