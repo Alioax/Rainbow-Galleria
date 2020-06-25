@@ -203,7 +203,7 @@ const Fullscreen = (props) => {
                   <motion.button
                     onClick={() => handleSave(props.pictures[props.activePic])}
                     whileTap={{ scale: 0.9 }}
-                    className="focus-none btn mr-2 focus-none p-0 rounded-sm"
+                    className="focus-none btn focus-none p-0 rounded-sm"
                   >
                     <div className="d-flex p-2 rounded-sm transition-base hover-icon">
                       {saved.some(
@@ -217,17 +217,17 @@ const Fullscreen = (props) => {
                       )}
                     </div>
                   </motion.button>
-                  <motion.a
+                  {/* <motion.a
                     whileTap={{ scale: 0.9 }}
                     target="_blank"
-                    className="focus-none btn focus-none p-0 rounded-sm"
+                    className="focus-none ml-2 btn focus-none p-0 rounded-sm"
                     href={props.pictures[props.activePic].url}
                     download={props.pictures[props.activePic].title}
                   >
                     <div className="d-flex p-2 rounded-sm transition-base hover-icon">
                       <MdFileDownload className="text-primary h3 mb-0" />
                     </div>
-                  </motion.a>
+                  </motion.a> */}
                 </div>
               </div>
             </div>
