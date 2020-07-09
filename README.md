@@ -1,6 +1,4 @@
-Front end engine of a platform for test takers. Built on top of reactjs, redux and sagas.
-
-## Available Scripts
+## 🌈 Rainbow-Galleria
 
 In the project directory, you can run:
 
