@@ -14,7 +14,7 @@ const Utilities = ({ children }) => {
       {children}
       <Helmet>
         <title>Rainbow Galleria</title>
-        <meta name="description" content="Photography Gallery" />
+        <meta name="og:description" content="Photography Gallery" />
         <meta property="og:title" content="Rainbow Gallery" />
         <meta property="og:type" content="website" />
         <meta

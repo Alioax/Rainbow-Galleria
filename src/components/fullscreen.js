@@ -123,6 +123,10 @@ const Fullscreen = (props) => {
           content={props.pictures[props.activePic].description}
         />
         <meta
+          property="og:description"
+          content={props.pictures[props.activePic].description}
+        />
+        <meta
           property="og:title"
           content={props.pictures[props.activePic].title}
         />
