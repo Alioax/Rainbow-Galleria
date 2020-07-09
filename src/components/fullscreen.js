@@ -116,7 +116,8 @@ const Fullscreen = (props) => {
     <>
       <Helmet>
         <title>
-          {props.pictures[props.activePic].title} | Rainbow Galleria
+          {/* {props.pictures[props.activePic].title} | Rainbow Galleria */}
+          {props.pictures[props.activePic].title} • Rainbow Galleria
         </title>
         <meta
           name="description"
