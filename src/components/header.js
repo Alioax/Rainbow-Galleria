@@ -33,8 +33,8 @@ const Header = (props) => {
     };
     isLarge = true;
     blur = {
-      top: { backdropFilter: "blur(4px)" },
-      center: { backdropFilter: "blur(0)" },
+      top: { backdropFilter: "saturate(180%) blur(20px)" },
+      center: { backdropFilter: "saturate(100%) blur(0px)" },
     };
     headerImg = props.data.filter((pic) => pic.headerLg)[0];
   }
